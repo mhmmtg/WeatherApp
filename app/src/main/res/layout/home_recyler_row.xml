@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="120dp"
+        android:layout_height="180dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rounded_bg">
+
+        <TextView
+            android:id="@+id/textTime"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/convergence"
+            android:text="@string/hyphen"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageSmallForecast"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="center"
+            app:layout_constraintBottom_toTopOf="@+id/textSmallDegree"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTime"
+            android:contentDescription="@string/image_main"
+            tools:src="@drawable/ic_downloading" />
+
+        <TextView
+            android:id="@+id/textSmallDegree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/convergence"
+            android:text="@string/hyphen"
+            android:textColor="@color/main_text_color"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textD2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/o"
+            android:textColor="@color/main_text_color"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/textSmallDegree"
+            app:layout_constraintTop_toTopOf="@+id/textSmallDegree" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
